@@ -1,0 +1,2 @@
+# DjangoCookbook
+Django Playground
