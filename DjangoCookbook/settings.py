@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'pages.apps.PagesConfig',
+    'posts.apps.PostsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -58,7 +59,8 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates/'),
-            os.path.join(BASE_DIR, 'pages/templates/pages/')
+            os.path.join(BASE_DIR, 'pages/templates/pages/'),
+            os.path.join(BASE_DIR, 'posts/templates/posts/')
             ],
         'APP_DIRS': True,
         'OPTIONS': {
